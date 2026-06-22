@@ -1,8 +1,8 @@
-# ROOTQR
+# rootqr
 
 A single self-contained ROOT macro that turns a URL into a **scannable QR code
 rendered as a `TH2D`**, where every dark module is painted with a 2D Gaussian
-centred on the module (each module is a `sub × sub` grid of sub-pixels: the
+centered on the module (each module is a `sub × sub` grid of sub-pixels: the
 center is fully filled, neighbors fade out, and the tail dies before reaching
 the next module). It's drawn with `COLZ` and saved as a PNG — the y-axis reads
 `QR Code` and the x-axis `Scan Me`.
@@ -66,4 +66,4 @@ dots. Every bin is filled, so `COLZ` paints the whole frame: value 0 maps to the
 scheme background and the peak saturates to the dark colour. Row 0 of the QR is
 placed at the top so the image isn't mirrored. `σ ≈ 0.40` is large enough that
 each module clearly registers, small enough that a module's tail doesn't light up
-its neighbours' centers.
+its neighbors' centers.
